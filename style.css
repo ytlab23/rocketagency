@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* || RESET */
 *,
 *::before,
@@ -52,19 +54,19 @@ address {
     font-style: normal;
 }
 
-span, time, label, ion-icon {
+span, time, label, i {
     display: block;
 }
 
-ion-icon {
+i {
     pointer-events: none;
 }
 
 /* || VARIABLES */
 :root {
     /* TYPOGRAPHY */
-    --FF-HEADING: 'League Spartan', sans-serif;
-    --FF: "Roboto", sans-serif;
+    --FF-HEADING: "Roboto", sans-serif;
+    --FF: "Open Sans", sans-serif;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
@@ -122,6 +124,11 @@ ion-icon {
         --BLACK: #333;
     } */
 
+/* || UTILITY STYLE */
+.container {
+    padding-inline: 15px;
+}
+
 /* || GENERAL STYLES */
 
 html {
@@ -169,4 +176,63 @@ a:active {
 
 li {
     list-style: none;
+}
+
+/* || HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--BODY-BGCOLOR);
+    padding-block: 15px;
+    border-block-end: 1px solid var(--CULTURED);
+    z-index: 4;
+    transition: var(--TRANSITION-1);
+}
+
+.header.active {
+    filter: drop-shadow(var(--SHADOW-2));
+}
+
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--FF-HEADING);
+    color: var(--BLACK);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.nav-toggle-btn {
+    font-size: 40px;
+}
+
+.nav-toggle-btn.active .open, .nav-toggle-btn .close {
+    display: none;
+}
+
+.nav-toggle-btn .open, .nav-toggle-btn.active .close {
+    display: block;
+}
+
+.navbar {
+    background-color: var(--BODY-BGCOLOR);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(100% - 30px);
+    width: 100%;
+    padding-inline: 0;
+    border: 1px solid var(--CULTURED);
+    transition: 0.3s var(--CUBIC-OUT);
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
 }
