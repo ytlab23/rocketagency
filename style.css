@@ -1,0 +1,172 @@
+/* || RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b3b3b3;
+}
+
+:focus-visible {
+    outline-offset: 4px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, textarea, button {
+    font: inherit;
+    display: block;
+    background: none;
+    border: none;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+span, time, label, ion-icon {
+    display: block;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+/* || VARIABLES */
+:root {
+    /* TYPOGRAPHY */
+    --FF-HEADING: 'League Spartan', sans-serif;
+    --FF: "Roboto", sans-serif;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* COLORS */
+    --SAFETY-ORANGE: #ff6a00;
+    --LAVENDER-GRAY: #c5c8d8;
+    --PERSIAN-ROSE: #ff2e9d;
+    --RED-CRAYOLA: #fa004f;
+    --EERIE-BLACK: #18181b;
+    --LIGHT-GRAY: #cccccc;
+    --CULTURED-2: #f7fafd;
+    --PLATINUM: #e6e6e6;
+    --FONT-COLOR: #333;
+    --CULTURED: #ededed;
+    --BLACK_10: #0000001a;
+    --BLACK_5: #0000000d;
+    --BODY-BGCOLOR: #f5f5f5;
+    --WHITE-2: #fbf9f9;
+    --BLACK: #333;
+
+    /* GRADIENT */
+    --GRADIENT: linear-gradient(to left top, var(--PERSIAN-ROSE), var(--SAFETY-ORANGE));
+
+    /* STANDARD PADDING */
+    --SECTION-PADDING: 60px;
+
+    /* SHADOW */
+    --SHADOW-1: 0 6px 24px var(--BLACK_5);
+    --SHADOW-2: 0 2px 28px var(--BLACK_10);
+
+    /* BORDER-RADIUS */
+    --RADIUS-2: 2px;
+    --RADIUS-5: 5px;
+    --RADIUS-8: 8px;
+
+    /* TRANSITION */
+    --TRANSITION-1: 0.25s ease;
+    --TRANSITION-2: 0.5s ease;
+    --CUBIC-OUT: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+@media (prefers-color-scheme: dark) {
+    }
+    /* :root {
+        --LAVENDER-GRAY: #c5c8d8;
+        --EERIE-BLACK: #18181b;
+        --LIGHT-GRAY: #cccccc;
+        --CULTURED-2: #f7fafd;
+        --PLATINUM: #e6e6e6;
+        --GRAY-WEB: #777b83;
+        --CULTURED: #ededed;
+        --BLACK_10: #0000001a;
+        --BLACK_5: #0000000d;
+        --WHITE-1: #f5f5f5;
+        --WHITE-2: #fbf9f9;
+        --BLACK: #333;
+    } */
+
+/* || GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+    font-family: var (--FF);
+}
+
+body {
+    background: var(--BODY-BGCOLOR);
+    min-height: 100hv;
+    color: var(--FONT-COLOR);
+    font-size: var(--FS);
+    height: 300vh;
+}
+
+h1, h2, h3 {
+    font-family: var();
+    letter-spacing: 0.1em;
+}
+
+h2, h3 {
+    margin-bottom: 1em;
+    color: var(--HIGHLIGHT-COLOR);
+}
+
+p {
+    /* DONT ADD UNIT TO THE LINE-HEIGHT */
+    line-height: 1.5; 
+}
+
+a:any-link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+a:hover, a:focus-visible {
+    color: var();
+}
+
+a:active {
+    color: var();
+}
+
+li {
+    list-style: none;
+}
