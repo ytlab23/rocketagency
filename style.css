@@ -129,6 +129,35 @@ i {
     padding-inline: 15px;
 }
 
+.btn {
+    max-width: max-content;
+    color: var(--BODY-BGCOLOR);
+    font-size: var(--FS);
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: var(--RADIUS-5);
+    transition: var(--TRANSITION-1);
+}
+
+.btn-primary {
+    background-image: var(--GRADIENT);
+    background-size: 1000%;
+}
+
+.btn-primary:is(:hover, :focus) {
+    background-position: bottom right;
+}
+
+.btn-secondary {
+    background-color: var(--BODY-BGCOLOR);
+    color: var(--EERIE-BLACK);
+}
+
+.btn-secondary:is(:hover, :focus) {
+    background-color: var(--EERIE-BLACK);
+    color: var(--BODY-BGCOLOR);
+}
+
 /* || GENERAL STYLES */
 
 html {
@@ -142,7 +171,6 @@ body {
     min-height: 100hv;
     color: var(--FONT-COLOR);
     font-size: var(--FS);
-    height: 300vh;
 }
 
 h1, h2, h3 {
@@ -167,7 +195,7 @@ a:any-link {
 }
 
 a:hover, a:focus-visible {
-    color: var();
+    color: var(--RED-CRAYOLA);
 }
 
 a:active {
@@ -235,4 +263,34 @@ li {
     max-height: 0;
     visibility: hidden;
     overflow: hidden;
+}
+
+.navbar.active {
+    max-height: 320px;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.navbar-list {
+    padding: 15px 10px;
+    padding-block-start: 10px;
+    opacity: 0.1;
+    transition: var(--TRANSITION-1);
+}
+
+.navbar.active .navbar-list {
+    opacity: 1;
+}
+
+.navbar-link {
+    color: var(--EERIE-BLACK);
+    font-family: var(--FF);
+    font-size: var(--FS);
+    line-height: 1.5;
+    padding-block: 8px;
+    transition: var(--TRANSITION-1);
+}
+
+.header .btn {
+    margin-block-start: 10px;
 }
