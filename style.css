@@ -423,7 +423,7 @@ li {
     padding: 16px;
     border-radius: 50%;
     animation: plus 1.5s ease-out infinite;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 @keyframes plus {
@@ -609,7 +609,7 @@ textarea.input-field {
 .contact-card .card-icon {
     background-color: var(--CULTURED-2);
     color: var(--RED-CRAYOLA);
-    padding: 13px;
+    padding: 16px;
     font-size: 25px;
     border-radius: 50%;
     transition: var(--TRANSITION-1);
@@ -672,13 +672,14 @@ textarea.input-field {
     position: fixed;
     bottom: 10px;
     right: 20px;
-    background-color: #cfc7c7dc;
+    background-color: var(--LIGHT-GRAY);
     border-radius: 50%;
     box-shadow: var(--SHADOW-2);
     z-index: 4;
     opacity: 0;
     visibility: hidden;
     transition: var(--TRANSITION-1);
+    padding: 6px;
 }
 
 .back-top-btn.active {
