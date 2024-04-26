@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoketAgency - AI Marketing Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icons/favicon.svg" type="image/svg+xml">
+    <script src="https://kit.fontawesome.com/6ba66a4bb2.js" crossorigin="anonymous"></script>
+</head>
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+            <a href="/" class="logo">RoketAgency</a>
+            <nav class="navbar container" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="/" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="navbar-link">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/get_started.html" class="btn btn-primary">Get Started</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <article>
+        </article>
+    </main>
+
+    <!-- GET STARTED FORM -->
+    <div class="container">
+        <div class="get-started-form">
+            <h2 class="h2">Initiative Form</h2>
+            <p class="section-text">Please complete the form below to initiate a disscusion about enhancing your brand's online visibility. Our team will contact you to explore contract opportunities related to maximizing your digital presence.</p>
+            <form action="/">
+                <div class="input-wrapper">
+                    <input type="text" name="name" aria-label="name" class="input-field" placeholder="Your Name" required>
+    
+                    <input type="number" name="phone" aria-label="phone" class="input-field" placeholder="Phone Number">
+                </div>
+    
+                <div class="input-wrapper">
+                    <input type="email" name="email" aria-label="email" class="input-field" placeholder="Email Address" required>
+    
+                    <input type="text" class="input-field" aria-label="company" name="company" placeholder="Company Name" required>
+                </div>
+    
+                <div class="input-wrapper">
+                    <input type="text" class="input-field" name="project" aria-label="project" placeholder="Project" required>
+    
+                    <input type="text" class="input-field" aria-label="budget" name="budget" placeholder="Budget" required>
+                </div>
+                
+                <label for="timeline" class="label">Timeline</label>
+                <input type="date" class="input-field" name="timeline" aria-label="timeline" required>
+    
+                <button type="submit" class="btn btn-primary" onclick="showAlert()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">
+                &copy; 2024 All Rights Reserved by <a href="#" class="copyright-link">RoketAgency</a>
+              </p>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

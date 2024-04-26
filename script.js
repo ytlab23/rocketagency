@@ -47,5 +47,5 @@ window.addEventListener("scroll", () => {
 
 // || ALERT || \\
 function showAlert() {
-    alert("Thank you for submitting!");
+    alert("Submitted!");
 }
